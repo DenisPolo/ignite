@@ -1613,7 +1613,7 @@ control.sh|bat --cache metrics enable --caches cache-2,cache-1
 
 == Rebuild index
 
-The `schedule_indexes_rebuild` commands Apache Ignite to rebuild indexes for specified caches or cache groups. Target caches or cache groups must be in link:maintenance-mode[Maintenance Mode].
+The `schedule_indexes_rebuild` command instructs Apache Ignite to schedule the rebuild of indexes for the specified caches or cache groups. This will result in the specified nodes being scheduled to start in link:maintenance-mode[Maintenance Mode] during the next startup.
 
 [source, shell]
 ----
